@@ -13,7 +13,7 @@
   },
   /* TODO specify language server file extension in format: source.<fileExtension>  */
   "enhancedScopes": [
-    "source.stm"
+    "source.ml"
   ],
   "consumedServices": {
     "linter-indie": {

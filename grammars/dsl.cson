@@ -1,18 +1,18 @@
 // TODO specify file extension of your language server in format:  source.<extension>
-'scopeName': 'source.mydsl'
+'scopeName': 'source.ml'
 // TODO specify name of your language server
-'name': 'MyDsl'
+'name': 'MealyMachine'
 // TODO specify file extension of your language server
 'fileTypes': [
-  'mydsl'
+  'ml'
 ]
 injections:
   'L:*':
     patterns: [
         {
           // TODO specify keywords of your language, instead of trans|state
-            match: '\\b(trans|state)\\b'
+            match: '\\b(begin|end|produces|to|trans|define input set|define output set|define state set|when)\\b|!'
             // TODO specify file extension of your language server in format:  keyword.control.<extension>
-            name: 'keyword.control.mydsl'
+            name: 'keyword.control.ml'
         }
     ]
